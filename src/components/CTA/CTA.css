@@ -1,0 +1,33 @@
+.cta {
+  background:
+    linear-gradient(90deg, rgba(6, 21, 44, 0.94), rgba(5, 7, 13, 0.7)),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=80') center/cover;
+}
+
+.cta__content {
+  max-width: 760px;
+}
+
+.cta h2 {
+  font-size: clamp(2.3rem, 6vw, 4.4rem);
+  line-height: 1;
+  letter-spacing: 0;
+  margin: 14px 0 18px;
+}
+
+.cta p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin: 0 0 30px;
+}
+
+@media (max-width: 767px) {
+  .cta {
+    background-position: center right 34%;
+  }
+
+  .cta h2 {
+    font-size: clamp(2.15rem, 11vw, 3rem);
+  }
+}

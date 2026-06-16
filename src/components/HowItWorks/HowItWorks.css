@@ -1,0 +1,79 @@
+.how {
+  background:
+    linear-gradient(90deg, rgba(5, 7, 13, 0.95), rgba(5, 7, 13, 0.72)),
+    url('https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1800&q=80') center/cover scroll;
+}
+
+.how__grid {
+  align-items: start;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr;
+}
+
+.how__steps {
+  display: grid;
+  gap: 18px;
+}
+
+.step {
+  align-items: flex-start;
+  background: rgba(11, 18, 32, 0.76);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+  padding: 22px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.step:hover {
+  border-color: rgba(69, 213, 255, 0.34);
+  transform: translateX(6px);
+}
+
+.step > span {
+  align-items: center;
+  background: rgba(31, 122, 255, 0.2);
+  border: 1px solid rgba(69, 213, 255, 0.24);
+  border-radius: 8px;
+  color: var(--cyan);
+  display: inline-flex;
+  font-weight: 900;
+  height: 54px;
+  justify-content: center;
+  width: 54px;
+}
+
+.step h3 {
+  margin: 0 0 8px;
+}
+
+.step p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .how__grid {
+    gap: 44px;
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    grid-template-columns: 64px 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how {
+    background-attachment: fixed;
+  }
+
+  .how__grid {
+    gap: 56px;
+    grid-template-columns: 0.85fr 1fr;
+  }
+}
